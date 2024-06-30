@@ -35,3 +35,25 @@ vegetarian_guests = ['John', 'Lara Croft', 'Erik Schrody', 'Mike Tyson']
 vegetarian_guests.extend(omnivore_guests)
 
 print(f'The list of guests who can eat vegetables and herbs - {vegetarian_guests}')
+
+
+# task_5
+# You have a group of guests for the VIP box.
+# The seats in the VIP box are all occupied by these guests and can not be changed.
+# There is a group of guests in the common room and there are still places in it. Display 2 groups of guests in code.
+
+
+
+# task_6
+# You have a group of people with non-unique names.
+# Generate a list of non-duplicate names (you cannot use set for this task. If there are 2 johns in the list,
+# you need to take only one of them. "John Dow", "John Dow", "Marta Dow" => "John Dow", "Marta Dow ")
+
+non_unique_list = ['Olena', 'Dan', 'Erik', 'Irina', 'Michael', 'Ann', 'Olena', 'Erik', 'Jack']
+unique_list = []
+
+for name in non_unique_list:
+    if name not in unique_list:
+        unique_list.append(name)
+
+print(unique_list)
