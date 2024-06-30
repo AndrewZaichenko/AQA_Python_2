@@ -42,6 +42,8 @@ print(f'The list of guests who can eat vegetables and herbs - {vegetarian_guests
 # The seats in the VIP box are all occupied by these guests and can not be changed.
 # There is a group of guests in the common room and there are still places in it. Display 2 groups of guests in code.
 
+guests_in_vip = ('John Dow', 'Jack Sparrow', 'Mike Tyson')
+guests_in_common = {'place1': 'Olena', 'place2': 'Dan', 'place3': None, 'place4': 'Michael', 'place5': None}
 
 
 # task_6
