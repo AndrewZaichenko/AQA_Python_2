@@ -24,3 +24,14 @@ person_in_all_blacklists = casino_blacklist.intersection(poker_blacklist, alcoho
 print(f'{person_in_all_blacklists} is present in all blacklists')
 
 
+# task_4
+# You have two groups of people. One group consists of omnivores, the other only vegetarians.
+# An omnivore is a vegetarian but a vegetarian is not an omnivore.
+# Display a list of guests who can eat vegetables and herbs.
+
+omnivore_guests = ['Dan', 'Erik', 'Irina', 'Michael', 'Ann', 'Olena', 'Jack']
+vegetarian_guests = ['John', 'Lara Croft', 'Erik Schrody', 'Mike Tyson']
+
+vegetarian_guests.extend(omnivore_guests)
+
+print(f'The list of guests who can eat vegetables and herbs - {vegetarian_guests}')
