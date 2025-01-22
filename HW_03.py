@@ -4,35 +4,19 @@
 # with the same format as in the case with odd indices.
 
 list_of_elements = [1, 2, 3, 4, 5, 6, 7, 8]
-odd_index_values = []  #нечетеные
-even_index_values = [] #четеные
+odd_index_values = []  # %2 != 0
+even_index_values = []  # %2 == 0
 
+# indexed_tuples = list(enumerate(my_list))
 
-# for index, elem in enumerate(list_of_elements):
-#     if index % 2 == 0:
-#         even_index_list.append(index)
-#     elif index % 2 != 0:
-#         odd_index_list.append(index)
-#
-# print(odd_index_list)
-# print(even_index_list)
-
-for elem in list_of_elements:
-    if list_of_elements.index(elem) % 2 == 0:
-        even_index_values.append(elem)
+for tuple_index_value in enumerate(list_of_elements):
+    if tuple_index_value[0] % 2 != 0:
+        odd_index_values.append(tuple_index_value)
     else:
-        odd_index_values.append(elem)
+        even_index_values.append(tuple_index_value)
 
-
-for index, value in enumerate(odd_index_values):
-    print(index, value)
-
-
-print(odd_index_values)
-print(even_index_values)
-
-
-
+print(f'The new list with odd indexes and its values {odd_index_values}')
+print(f'The new list with even indexes and its values {even_index_values}')
 
 
 # 2. You have the number 2 as a variable. Multiply it by 2 in two ways.
@@ -49,8 +33,18 @@ var_two /= 2
 print(divide_way_1, var_two)
 
 
-
-# 3. You have 2 lists of names friends = ["John", "Marta", "James"] and enemies = ["John", "Johnatan", "Artur"].
+# 3. You have 2 lists of names friends = ["John", "Marta", "James"] and enemies = ["John", "Johnathan", "Artur"].
 # Loop through the names of friends and write the message f"{friend} we are the best friends" if
 # the friend is not in the list of enemy names. And display the message f"{friend} we are not friends anymore"
 # if the friend is on the list of enemies. If the friend's name is James, we don't check him because he is the best friend.
+
+list_of_friends = ["John", "Marta", "James"]
+list_of_enemies = ["John", "Johnathan", "Artur"]
+
+for friend in list_of_friends:
+    if friend == 'James':
+        continue
+    elif friend not in list_of_enemies:
+        print(f"{friend} we are the best friends")
+    else:
+        print(f"{friend} we are not friends anymore")
