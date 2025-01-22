@@ -1,6 +1,6 @@
 # task_2
 # You have 2 companies with people. One of the companies, let it be Eleks, was taken over by Toshiba. Show it in code.
-# Keep in mind that people with the same name can be in both companies """
+# Keep in mind that people with the same name can be in both companies
 
 eleks_personal = {'Erik', 'Michael', 'Ann', 'Olena'}
 toshiba_personal = {'Dan', 'Erik', 'Irina', 'Michael', 'Ann', 'Olena', 'Jack'}
@@ -43,8 +43,9 @@ print(f'The list of guests who can eat vegetables and herbs - {vegetarian_guests
 # There is a group of guests in the common room and there are still places in it. Display 2 groups of guests in code.
 
 guests_in_vip = ('John Dow', 'Jack Sparrow', 'Mike Tyson')
-guests_in_common = {'place1': 'Olena', 'place2': 'Dan', 'place3': None, 'place4': 'Michael', 'place5': None}
-
+print(f'These guests are VIP: {guests_in_vip}', type(guests_in_vip))
+guests_in_common = ['Olena', 'Dan', None, 'Michael', None]
+print(f'These guests are in the common room and there are still places in it: {guests_in_common}', type(guests_in_common))
 
 # task_6
 # You have a group of people with non-unique names.
